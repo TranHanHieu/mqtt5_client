@@ -119,9 +119,9 @@ class MqttConnectPayload implements MqttIPayload {
     final sb = StringBuffer();
     sb.writeln('Will topic = $willTopic');
     sb.write('User name = ');
-    username != null ? sb.writeln('$username') : sb.writeln('not set');
+    /// username != null ? sb.writeln('$username') : sb.writeln('not set');
     sb.write('Password = ');
-    password != null ? sb.writeln('$password') : sb.writeln('not set');
+    /// password != null ? sb.writeln('$password') : sb.writeln('not set');
     return sb.toString();
   }
 }
